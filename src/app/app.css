@@ -1,17 +1,24 @@
 .customTab {
-    float:right;
-    margin-left: auto;
+  float: right;
+  margin-left: auto;
 }
 
 .menu {
-    background-color: purple;
+  background-color: purple;
 }
 
 .menu ul li {
-    cursor: pointer;
-    color: rgb(228, 224, 224);
+  cursor: pointer;
+  color: rgb(228, 224, 224);
+  transition: background 0.2s;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
 }
 
-li.active {
-    background-color: #500050;
+.menu li.active {
+  background-color: #500050;
 }
+.menu ul li:hover {
+  background-color: #600060;
+}
+

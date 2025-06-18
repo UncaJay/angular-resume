@@ -1,13 +1,13 @@
 <!-- <div class="container-fluid" style="background-image: url(https://images.ctfassets.net/qgsv4hbp414k/6ZaX5U1MFHjr5mfj3mqKiy/d8cb51b27edb2cb8c7ba0829602ea5a3/YYH-DT-FirstForm-Carousel-HeroImage-Desktop_2x.jpg?w=3200&amp;h=1480&amp;q=50);"> -->
 <div class="container-fluid">
-  <div class="menu row">
+  <nav class="menu row" role="navigation" aria-label="Main menu">
     <ul class="d-flex w-100 mb-0" style="list-style-type: none; float:right">
-      <span></span>
+      <!-- <span></span> -->
       <li class="customTab py-2" [class.active]="about" (click)="goToRoute('about')">About</li>
       <li class="ml-3 py-2" [class.active]="projects" (click)="goToRoute('projects')">Projects</li>
       <li class="mx-3 py-2" [class.active]="games" (click)="goToRoute('games')">Games</li>
     </ul>
-  </div>
+  </nav>
   
   <!-- <tabset>
     <tab style="margin-left:auto" (selectTab)="route='about'">
