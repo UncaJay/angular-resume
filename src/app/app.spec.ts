@@ -14,10 +14,19 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', () => {
+  it('should render navbar', () => {
     const fixture = TestBed.createComponent(App);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular-app');
+    expect(compiled.querySelector('nav')?.innerHTML).toContain('li');
+  });
+
+  it('should render all menus', () => {
+    const fixture = TestBed.createComponent(App);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    compiled.querySelectorAll('li').forEach((li) => {
+      expect(li.innerHTML).toMatch(/About|Projects|Games/);
+    });
   });
 });
